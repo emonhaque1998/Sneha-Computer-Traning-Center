@@ -40,12 +40,12 @@
             <div class="collapse navbar-collapse tab-content" id="sidebarCollapse">
                 <!-- Navigation -->
                 <ul class="navbar-nav tab-pane active" id="Main" role="tabpanel">
-                    <li class="menu-label mt-0 text-primary font-12 fw-semibold">M<span>ain</span><br><span class="font-10 text-secondary fw-normal">Unique Dashboard</span></li>                    
+                    <li class="menu-label mt-0 text-primary font-12 fw-semibold">M<span>ain</span><br><span class="font-10 text-secondary fw-normal">Admin Panel</span></li>                    
                     <li class="nav-item">
                         <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
                             aria-expanded="false" aria-controls="sidebarAnalytics">
                             <i class="ti ti-stack menu-icon"></i>
-                            <span>Analytics</span>
+                            <span>Admin Management</span>
                         </a>
                         <div class="collapse " id="sidebarAnalytics">
                             <ul class="nav flex-column">
@@ -53,7 +53,7 @@
                                     <a class="nav-link" href="index.html">Dashboard</a>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
-                                    <a href="analytics-customers.html" class="nav-link ">Customers</a>
+                                    <router-link to="/" class="nav-link">Student</router-link>
                                 </li><!--end nav-item-->
                                 <li class="nav-item">
                                     <a href="analytics-reports.html" class="nav-link ">Reports</a>

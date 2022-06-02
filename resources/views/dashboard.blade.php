@@ -11,7 +11,7 @@
     <div class="page-wrapper">
 
         <!-- Page Content-->
-        <div class="page-content-tab" id="app">
+        <div class="page-content-tab">
 
             <div class="container-fluid">
                 <!-- Page-Title -->
@@ -27,7 +27,6 @@
                                     <li class="breadcrumb-item active">Starter</li>
                                 </ol>
                             </div>
-                            
 
 
                             <router-view></router-view>

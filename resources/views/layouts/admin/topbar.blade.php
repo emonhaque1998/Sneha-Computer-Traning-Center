@@ -204,8 +204,13 @@
                         <div class="dropdown-divider mb-0"></div>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <a class="dropdown-item" :href="route('logout')" onclick="event.preventDefault();
-                        this.closest('form').submit();">><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+
+                            <x-dropdown-link class="dropdown-item" :href="route('logout')"
+                                             onclick="event.preventDefault();
+                                                this.closest('form').submit();"><i class="ti ti-power font-16 me-1 align-text-bottom"></i>
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
                         </form>
                         
                     </div>

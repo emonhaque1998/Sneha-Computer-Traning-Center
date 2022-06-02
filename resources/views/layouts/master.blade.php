@@ -18,11 +18,20 @@
      <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
      <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
      <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+     
 
 </head>
 <body id="@yield('bodyId')" class="@yield('bodyClass')" style="@yield('bodyStyle')">
-    @yield("content")
-<script src="{{asset('assets/js/app.js')}}"></script>
+    <div id="app">
+        @yield("content")
+    </div>
+    
+
+    
+    <script src="{{asset('assets/js/app.js')}}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
+    
 </body>
 
 </html>
